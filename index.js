@@ -7,8 +7,11 @@ const cors=require('cors')
 
 app.use(cors())
 app.use(express.json())
+app.get('/', (req, res) => {
+  res.send("Hello From Backend")
+});
 app.use("/api/auth",require("./routes/auth"))
 app.use("/api/notes",require("./routes/notes"))
 app.listen(port,  () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at https://inotebook-api.render.com`)
 })
