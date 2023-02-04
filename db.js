@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const mongoURI=MONGO_URI
+const mongoURI=REACT_APP_MONGO_URI
 
 const connectToMongo=()=>{
     mongoose.connect(mongoURI,()=>{
