@@ -4,12 +4,7 @@ connectToMongo();
 const app = express()
 const port = 5000
 const cors=require('cors')
-
-app.use(cors( 
-  {"Access-Control-Allow-Origin":"*"}
-  // [ "http://localhost:3000","https://inotebook-te8u.onrender.com"
-  //      ]
-))
+app.use(cors())
 app.use(express.json())
 app.get('/', (req, res) => {
   res.send("Hello From Backend")
