@@ -8,7 +8,7 @@ const fileupload=require('express-fileupload')
 // Set up a whitelist and check against it:
 var whitelist = [
   'https://inotebook-te8u.onrender.com',
-// 'http://localhost:3000'
+'http://localhost:3000'
 ]
 var corsOptions = {
   origin: function (origin, callback) {
