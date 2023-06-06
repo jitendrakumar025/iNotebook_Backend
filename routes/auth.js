@@ -88,7 +88,7 @@ router.post('/login',[
     }
     const JWT_SECRET="sECUREKEY";
     var token = jwt.sign(payload, JWT_SECRET);
-    // console.log(token)
+    console.log(token)
     success=true;
     res.json({success:success,token:token});
   } catch(error){
